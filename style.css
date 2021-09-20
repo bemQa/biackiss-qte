@@ -1,0 +1,89 @@
+body {
+    background-image: url("image.png");
+    background-size: cover;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.captcha {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 200px;
+    position: relative;
+}
+.captcha__letter {
+    background-image: url("button.png");
+    background-size: contain;
+    width: 54px;
+    height: 55px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 36px Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0 3px;
+    color: #404042;
+}
+.captcha__letter--end {
+    background: url("button-succesfull.png");
+}
+.captcha__letter--now {
+    color: #b1663c;
+    box-shadow: 0px 0px 36px 6px rgba(202, 180, 60, 1);
+    transform: translateY(-20px);
+    z-index: 1;
+}
+.timer {
+    width: 400px;
+    margin-top: 20px;
+    border: 2px solid #000;
+    background: rgba(0,0,0,0.7);
+    position: relative;
+    height: 20px;
+}
+.timer__scale {
+    width: 100%;
+    background: linear-gradient(to right, #3399cc, #52a4c5);
+    height: 100%;
+    transition: linear .1s;
+}
+.timer__scale--go {
+    width: 0%;
+}
+.timer__text {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -20px);
+    color: #fff;
+}
+.message {
+    font: 300 20px Arial, sans-serif;
+    text-align: center;
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+}
+.message__success {
+    -webkit-text-stroke: 2px #56a1f0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #56a1f0;
+    color: #fff;
+}
+.message__fail {
+    -webkit-text-stroke: 2px #e02e40;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #e02e40;
+    color: #fff;
+}
+.message--hidden {
+    display: none;
+}
+.hints {
+    color: #fff;
+}
