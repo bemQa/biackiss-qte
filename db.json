@@ -38,13 +38,5 @@
     "price": 158,
     "image": "http://placehold.it/32x32",
     "category": "text"
-  },
-  {
-    "index": 5,
-    "name": "text",
-    "description": "text",
-    "price": 351,
-    "image": "http://placehold.it/32x32",
-    "category": "text"
   }
 ]
